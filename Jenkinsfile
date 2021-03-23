@@ -3,7 +3,9 @@
 pipeline {
   // Assign to docker slave(s) label, could also be 'any'
   agent {
-    label 'any' 
+    label 'master'
+    image 'python:3.7'
+    args '--user root'
   }
 
   stages {
