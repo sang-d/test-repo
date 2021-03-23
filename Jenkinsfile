@@ -3,7 +3,7 @@
 pipeline {
   // Assign to docker slave(s) label, could also be 'any'
   agent {
-    label 'BpaDocker' 
+    label 'BATMAN V2- Sites Scheduler Docker' 
   }
 
   stages {
@@ -11,7 +11,7 @@ pipeline {
       agent {
         docker {
           // Set both label and image
-          label 'BpaDocker'
+          label 'BATMAN V2- Sites Scheduler Docker'
           image 'node:7-alpine'
           args '--user root'
         }
