@@ -11,9 +11,7 @@ pipeline {
       agent {
         docker {
           // Set both label and image
-          label 'master'
           image 'node:7-alpine'
-          args '-u root'
         }
       }
       steps {
