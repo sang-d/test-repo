@@ -17,8 +17,8 @@ pipeline {
       }
       steps {
         echo '1234'
-        ls -lha
-        pwd
+        sh 'ls -lha'
+        sh 'pwd'
         // Steps run in node:7-alpine docker container on docker slave
       }
     }
