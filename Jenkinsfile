@@ -11,8 +11,9 @@ pipeline {
       agent {
         docker {
           // Set both label and image
-          label 'BATMAN V2- Worker-1'
+          label 'master'
           image 'node:7-alpine'
+          args '--user root:root
         }
       }
       steps {
