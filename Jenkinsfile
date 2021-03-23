@@ -13,7 +13,7 @@ pipeline {
           // Set both label and image
           label 'master'
           image 'node:7-alpine'
-          args '--user root:root'
+          args '--user jenkins'
         }
       }
       steps {
