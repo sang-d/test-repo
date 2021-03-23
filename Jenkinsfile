@@ -13,10 +13,10 @@ pipeline {
           // Set both label and image
           label 'master'
           image 'node:7-alpine'
-          args '--name docker-node' // list any args
         }
       }
       steps {
+        echo '1234'
         // Steps run in node:7-alpine docker container on docker slave
         sh 'node --version'
       }
