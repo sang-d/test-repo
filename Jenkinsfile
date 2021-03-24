@@ -12,7 +12,7 @@ pipeline {
         docker {
           // Set both label and image
           label 'master'
-          image 'python:3.7'
+          image 'node:10-alpine'
           args '--user root'
         }
       }
