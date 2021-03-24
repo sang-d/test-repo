@@ -1,5 +1,8 @@
 pipeline {
-    agent { docker 'python:3.7' } 
+    agent { 
+        node { label 'master'}
+        docker 'python:3.7' 
+    } 
     stages {
         stage('Example Build') {
             steps {
